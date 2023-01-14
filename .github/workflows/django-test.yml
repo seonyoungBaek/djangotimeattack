@@ -7,11 +7,11 @@ jobs:
 
     runs-on: ubuntu-latest
     strategy:
-	      matrix:
-            python-version: ["3.7", "3.8", "3.9", "3.10"]
-            # 각 python 버전에 대하여 테스트를 병렬로 실행
-        fail-fast: False
-        # 하나가 실패해도 나머지는 정상적으로 돌아가길 원한다면 추가
+      matrix:
+          python-version: ["3.7", "3.8", "3.9", "3.10"]
+          # 각 python 버전에 대하여 테스트를 병렬로 실행
+      fail-fast: False
+      # 하나가 실패해도 나머지는 정상적으로 돌아가길 원한다면 추가
 
     steps:
       - uses: actions/checkout@v3
